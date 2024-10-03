@@ -810,7 +810,7 @@ button {
   padding: 96px 0;
 }
 
-.container {
+.portfolio-container {
   min-width: 320px;
 }
 
@@ -831,11 +831,7 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
 
-  row-gap: 48px;
-}
-
-.card {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  row-gap: 72px;
 }
 
 .card:hover .card-para,
@@ -901,3 +897,53 @@ button {
   margin: auto;
   margin-top: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    background-color: #fff;
+    padding: 96px 0;
+  }
+
+  .portfolio-container {
+    min-width: 768px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .card {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    background-color: #fff;
+    padding: 120px 0;
+  }
+
+  .portfolio-container {
+    min-width: 1158px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .card {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+/* Footer */
