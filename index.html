@@ -51,27 +51,88 @@
           </ul>
         </address>
 
-        <button class="hidden-button" type="button">
+        <button class="hidden-button" type="button" data-menu-open>
           <svg class="hidden-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu is-open">
+      <!-- Mobile menu -->
+
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Social links</div>
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="menu-nav-ul">
+              <li>
+                <a class="menu-link current" href="./index.html">Studio</a>
+              </li>
+              <li><a class="menu-link" href="">Portfolio</a></li>
+              <li><a class="menu-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="menu-address-list">
+            <ul class="mobile-menu-address">
+              <li class="menu-address-item">
+                <a
+                  class="menu-address-link current"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="menu-address-item">
+                <a class="menu-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div>
+            <ul class="menu-social-media-list">
+              <li class="menu-social-media-list-item">
+                <a class="menu-social-media-list-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-media-list-item">
+                <a class="menu-social-media-list-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-media-list-item">
+                <a class="menu-social-media-list-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-media-list-item">
+                <a class="menu-social-media-list-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- Section 1 -->
-
     <main>
-      <section class="hidden button-section">
+      <!-- Section 1 -->
+
+      <section class="button-section">
         <div class="container">
           <h1 class="button-section-heading">
             Effective Solutions for Your Business
@@ -84,7 +145,7 @@
 
       <!-- Section 2 -->
 
-      <section class="hidden main-section">
+      <section class="main-section">
         <div class="container main-container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="main-ul">
@@ -142,7 +203,7 @@
 
       <!-- Section 3 -->
 
-      <section class="hidden team-section">
+      <section class="team-section">
         <div class="container team-container">
           <h2 class="team-heading">Our Team</h2>
           <ul class="team-list">
