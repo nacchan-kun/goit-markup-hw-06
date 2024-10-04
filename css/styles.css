@@ -949,18 +949,17 @@ button {
 
 /* Footer */
 
-.footer {
-  background-color: #2e2f42;
-  padding: 100px 0;
-}
-
 .footer-container {
   min-width: 320px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+}
+
+.footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
 }
 
 .second-container {
@@ -972,8 +971,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-
-  /* line-height: 21px; */
+  margin-left: 86px;
   line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1008,6 +1006,7 @@ button {
 
 .social-media-footer {
   margin-right: auto;
+  margin-top: 72px;
 }
 
 .social-media-para {
@@ -1017,11 +1016,13 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  margin-left: 96px;
 }
 
 .social-media-footer-list {
   display: flex;
   gap: 16px;
+  margin-left: 40px;
 }
 
 .footer-li {
@@ -1060,10 +1061,25 @@ button {
   fill: #f4f4fd;
 }
 
+.subscribe-container {
+  margin-top: 72px;
+  margin-left: 12px;
+}
+
+.subscribe-para {
+}
+
 .subscribe-form {
 }
 
 .subscribe-label {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 288px;
+  height: 40px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
 }
 
 .subscribe-input {
