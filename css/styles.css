@@ -516,7 +516,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/tab-back@x2.png");
+      url("../images/tab-back.png");
   }
 
   .button-section-heading {
@@ -994,7 +994,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  text-align: start;
 }
 
 .social-media-footer {
@@ -1159,13 +1158,15 @@ button {
 
 @media screen and (min-width: 1158px) {
   .footer {
-    padding: 100px 0156px;
-    min-width: 1158px;
+    padding: 100px 0;
+    max-width: 1158px;
+    align-items: center;
   }
   .footer-container {
-    padding-left: 15px;
-    align-items: flex;
+    align-items: baseline;
+
     gap: 24px;
+    padding: 15px;
   }
 
   .second-container {
@@ -1176,5 +1177,3 @@ button {
     margin-left: auto;
   }
 }
-
-/* Modal window */
