@@ -1154,19 +1154,15 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
   .footer {
     padding: 100px 0;
-    max-width: 1158px;
-    align-items: center;
   }
   .footer-container {
-    align-items: baseline;
+    max-width: 1440px;
 
+    align-items: baseline;
     gap: 24px;
-    padding: 15px;
+    padding-left: 15px;
   }
 
   .second-container {
