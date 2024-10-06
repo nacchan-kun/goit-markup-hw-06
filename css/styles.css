@@ -962,9 +962,6 @@ button {
   row-gap: 72px;
 }
 
-.second-container {
-}
-
 .footer-header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1157,6 +1154,9 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
   .footer {
     padding: 100px 0;
     max-width: 1158px;
